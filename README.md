@@ -1,7 +1,5 @@
 # EcoFinds - Sustainable Second-hand Marketplace
 
-![EcoFinds Logo](public/eco-pattern.png)
-
 EcoFinds is a modern, sustainable second-hand marketplace web application where users can discover, list, and explore pre-owned goods. This project focuses on creating a beautiful UI/UX experience with dummy data, demonstrating how a real-world marketplace might function.
 
 ## 🌱 Features
