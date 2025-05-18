@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 20% 98%;
+    --foreground: 224 71.4% 4.1%;
+    --card: 0 0% 100%;
+    --card-foreground: 224 71.4% 4.1%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 224 71.4% 4.1%;
+    --primary: 122 47% 35%;
+    --primary-foreground: 210 20% 98%;
+    --secondary: 45 87% 65%;
+    --secondary-foreground: 224 71.4% 4.1%;
+    --muted: 220 14.3% 95.9%;
+    --muted-foreground: 220 8.9% 46.1%;
+    --accent: 45 87% 65%;
+    --accent-foreground: 224 71.4% 4.1%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 20% 98%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 122 47% 35%;
+    --radius: 0.75rem;
+
+    /* Category colors */
+    --category-clothing: 152 76% 44%;
+    --category-electronics: 199 89% 48%;
+    --category-books: 271 76% 53%;
+    --category-furniture: 24 83% 54%;
+    --category-accessories: 326 73% 62%;
+    --category-sports: 195 83% 58%;
+  }
+
+  .dark {
+    --background: 224 71.4% 4.1%;
+    --foreground: 210 20% 98%;
+    --card: 224 71.4% 4.1%;
+    --card-foreground: 210 20% 98%;
+    --popover: 224 71.4% 4.1%;
+    --popover-foreground: 210 20% 98%;
+    --primary: 122 47% 42%;
+    --primary-foreground: 224 71.4% 4.1%;
+    --secondary: 45 87% 65%;
+    --secondary-foreground: 224 71.4% 4.1%;
+    --muted: 215 27.9% 16.9%;
+    --muted-foreground: 217.9 10.6% 64.9%;
+    --accent: 45 87% 65%;
+    --accent-foreground: 224 71.4% 4.1%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 20% 98%;
+    --border: 215 27.9% 16.9%;
+    --input: 215 27.9% 16.9%;
+    --ring: 122 47% 42%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .gradient-primary {
+    background: linear-gradient(to right, #43a047, #2e7d32);
+    color: white;
+  }
+
+  .gradient-secondary {
+    background: linear-gradient(to right, #f4d35e, #f2c94c);
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+  }
+
+  .category-badge {
+    @apply inline-flex items-center rounded-full px-3 py-1 text-xs font-medium;
+  }
+
+  .category-badge-clothing {
+    @apply bg-[#20c997]/20 text-[#0ca678];
+  }
+
+  .category-badge-electronics {
+    @apply bg-[#339af0]/20 text-[#1c7ed6];
+  }
+
+  .category-badge-books {
+    @apply bg-[#9775fa]/20 text-[#7950f2];
+  }
+
+  .category-badge-furniture {
+    @apply bg-[#ff922b]/20 text-[#f76707];
+  }
+
+  .category-badge-accessories {
+    @apply bg-[#f06595]/20 text-[#e64980];
+  }
+
+  .category-badge-sports {
+    @apply bg-[#22b8cf]/20 text-[#15aabf];
+  }
+
+  .category-badge-other {
+    @apply bg-[#868e96]/20 text-[#495057];
+  }
+}
